@@ -6,7 +6,7 @@ Every operation with the subscript cv was implemented using OpenCV4. The rest we
 
 Due to plagarism concerns I was adviced by the professor to not upload the code but the results of each operation instead. 
 
-## Image Processing Operations
+## Image Processing Operation Results
 
 Each operation was implemented on two region of interests (x, y, sx, sy):
 	* (0, 0, 1200, 200)
@@ -114,11 +114,9 @@ Example channel input: HS (This will apply histogram equalization on the hue and
 
 ![Original image](images/mars.jpg) ![Image with cv_hist_eq_canny](images/cv_hist_eq_canny.jpg)
 
-6. cv_hist_eq_sobel: Performed on grey-level and color images. Converts the image to a grey-level image, applies histogram equalization followed by the sobel operator.
+23. cv_hist_eq_sobel: Performed on grey-level and color images. Converts the image to a grey-level image, applies histogram equalization followed by the sobel operator.
 The function outputs 2 images:
 	* output: The gradient image.
 	* outputB: The thresholded image.
 
 ![Original image](images/mars.jpg) ![Image with cv_hist_eq_sobel](images/cv_hist_eq_sobel.jpg) ![Thresholded image](images/cv_hist_eq_sobel_B.jpg)
-
-7. scan_code: Performed on grey-level and color images. Utilizes the QRCodeDetector class in OpenCV to detect and decode QR codes.
